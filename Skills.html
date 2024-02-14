@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<title>Leo's Skills</title>
+  <style>
+  #topText {
+      color: white; 
+	 }
+#topText:hover {
+	opacity: .5;
+}
+
+#navigation {
+  background-color: blue;
+}
+#transcript{
+margin-bottom: 50px;
+}
+.skill{
+border: 1px solid black;
+border-radius: 20%;
+height: 100px;
+width: 100px;
+}
+.skill:hover{
+cursor: pointer;
+opacity: .5;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-inverse" id="navigation">
+<div class="container">
+<ul class="nav navbar-nav">
+	<li><a id="topText" class="glyphicon glyphicon-home" href="/"> Home</a></li>
+	<li><a id="topText" class="glyphicon glyphicon-search" href="about"> About </a></li>
+	<li><a id="topText" class="glyphicon glyphicon-education" href="academics"> Academics</a></li>
+	<li><a id="topText" class="glyphicon glyphicon-wrench" href="skills"> Skills</a></li>
+	<li><a id="topText" class="glyphicon glyphicon-user" href="contact"> Contact</a></li>
+  </ul>
+</div>
+ </nav>
+ <center>
+  <h1 style="margin-bottom: 20px;" >Click <b>EACH</b> of the icons to see certification documents!</h1>
+ </center>
+ 
+ <div class="skills-container" style="display: flex; flex-direction: row; gap: 20px; justify-content: center;">
+<img class="skill" id="html" src="images/HTML.png">
+<img class="skill" id="css" src="images/css.png">
+<img class="skill" id="javascript" src="images/Javascript.png">
+<img class="skill" id="jquery" src="images/jquery.png">
+<img class="skill" id="bootstrap" src="images/Bootstrap.png">
+<img class="skill" id="chatgpt" src="images/chatGPT.png">
+</div>
+
+<div class="all-certs" style="margin-bottom: 200px;">
+	<center>
+		<iframe id="bootstrapCert" src="documents/bootstrap+Jquery.pdf" style="display: none; margin-top: 40px; height: 500px; width: 40%;">
+		</iframe>
+		<iframe id="javascriptCert" src="documents/css+js.pdf" style="display: none; margin-top: 40px; height: 500px; width: 40%;">
+		</iframe>
+		<iframe id="htmlCert" src="documents/html.pdf" style="display: none; margin-top: 40px; height: 500px; width: 40%;">
+		</iframe>
+	</center>
+
+	<div class="ai-cert" style="display: flex; flex-direction: row; margin-right: 10%; margin-left: 10%; gap: 5%;">
+		<iframe id="promptEngineer" src="documents/promptEngineer.pdf" style="display: none; margin-top: 40px; height: 200px; width: 30%;">
+			</iframe>
+		<iframe id="OpenAI" src="documents/Open AI.pdf" style="display: none; margin-top: 40px; height: 200px; width: 30%;">
+			</iframe>
+		<iframe id="AIbusiness" src="documents/AI applied for business.pdf" style="display: none; margin-top: 40px; height: 200px; width: 30%;">
+			</iframe>
+
+	</div>
+</div>
+	
+
+<script>
+
+// bootstrap dropdown
+
+$(document).ready(function(){
+  $("#bootstrap").click(function(){        
+    $("#bootstrapCert").show();
+	$("#promptEngineer").hide();
+	$("#javascriptCert").hide();
+	$("#htmlCert").hide();
+	$("#OpenAI").hide();
+	$("#AIbusiness").hide();
+  });
+  
+
+// jQuery dropdown
+
+
+  $("#jquery").click(function(){        
+    $("#bootstrapCert").show();
+	$("#promptEngineer").hide();
+	$("#javascriptCert").hide();
+	$("#htmlCert").hide();
+	$("#OpenAI").hide();
+	$("#AIbusiness").hide();
+  });
+  
+
+// chatGPT dropdown
+
+
+  $("#chatgpt").click(function(){        
+    $("#promptEngineer").show();
+	$("#OpenAI").show();
+	$("#AIbusiness").show();
+	$("#javascriptCert").hide();
+	$("#bootstrapCert").hide();
+	$("#htmlCert").hide();
+  });
+  
+// javascript dropdown
+  $("#javascript").click(function(){    
+	$("#javascriptCert").show();
+    $("#promptEngineer").hide();
+	$("#bootstrapCert").hide();
+	$("#htmlCert").hide();
+	$("#OpenAI").hide();
+	$("#AIbusiness").hide();
+});
+	
+	// css dropdown
+  $("#css").click(function(){    
+	$("#javascriptCert").show();
+    $("#promptEngineer").hide();
+	$("#bootstrapCert").hide();
+	$("#htmlCert").hide();
+	$("#OpenAI").hide();
+	$("#AIbusiness").hide();
+	
+  });
+  
+  $("#html").click(function(){    
+	$("#htmlCert").show();
+    $("#promptEngineer").hide();
+	$("#bootstrapCert").hide();
+	$("#javascriptCert").hide();
+	$("#OpenAI").hide();
+	$("#AIbusiness").hide();
+	
+  });
+  
+});
+  
+</script>
+
+
+</body>
+</html>

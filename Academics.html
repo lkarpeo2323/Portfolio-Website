@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academics</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  
+ <style>
+	
+		#topText {
+			color: white; 
+		}
+		#topText:hover {
+			opacity: .5;
+		}
+		#navigation{
+		background-color: blue;
+		}
+        .preview {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+
+        .semester, .gpa {
+            border: 3px solid black;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+        .semester {
+            width: 20%;
+            margin-right: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        
+
+		.course{
+		width: 10%;
+		}
+		.course-name{
+		width: 20%;
+		}
+
+        
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse" id="navigation">
+<div class="container">
+<ul class="nav navbar-nav">
+	<li><a id="topText" class="glyphicon glyphicon-home" href="/"> Home</a></li>
+	<li><a id="topText" class="glyphicon glyphicon-search" href="about"> About </a></li>
+	<li><a id="topText" class="glyphicon glyphicon-education" href="academics"> Academics</a></li>
+	<li><a id="topText" class="glyphicon glyphicon-wrench" href="skills"> Skills</a></li>
+	<li><a id="topText" class="glyphicon glyphicon-user" href="contact"> Contact</a></li>
+  </ul>
+</div>
+ </nav>
+  
+  
+<div class="preview">
+        <div class="semester" style="margin-left: 10%; width: 30%; background-color: #f0f0f0; border: 2px solid #ccc; border-radius: 5px; padding: 20px;">
+        <center>
+               <span style="display: inline-block; padding-bottom: 20px;">
+                    <h1 style="display: inline; font-size: 24px; color: black;">Semester</h1>
+                    &nbsp;<font color="black">(select one)</font>
+                </span>
+				
+            <div class="semester-list" style="text-align: center;">
+                <a href="#fall22" style="color: #fff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; display: inline-block; margin: 5px 0; text-decoration: none;">Fall 2022</a><br>
+                <a href="#spring23" style="color: #fff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; display: inline-block; margin: 5px 0; text-decoration: none;">Spring 2023</a><br>
+                <a href="#fall23" style="color: #fff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; display: inline-block; margin: 5px 0; text-decoration: none;">Fall 2023</a><br>
+				<a href="#spring24" style="color: #fff; background-color: #007bff; padding: 10px 20px; border-radius: 5px; display: inline-block; margin: 5px 0; text-decoration: none;">Spring 2024</a>
+            </div>
+        </center>
+    </div>
+
+        <div class="gpa" style="margin-right: 10%; width: 60%;">
+            <center>
+                <h1>Current Status</h1>
+            </center>
+            <div class="progress" style="margin-top: 10px; margin-bottom: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-success" role="progressbar" style="border: .5px solid black; position: relative; width: 37.5%;"><b>37.5% Complete</b></div>
+				<div class="progress-bar progress-bar-striped progress-bar-info" role="progressbar" style="border: .5px solid black; position: relative; width: 12.5%;"><b>12.5% Now</b></div>
+            </div>
+        
+            <div class="stats" style="display: flex; flex-type: row; flex-wrap: wrap; gap: 20px;">
+                <h4><b>Cumulative GPA:</b> 3.99</h4>
+                <h4><b>Expected Graduation:</b> May 2026</h4>
+                <h4><b>Major:</b> Information Systems</h4>       
+            </div>
+        </div>
+    </div>
+<br>
+
+		
+<div id="fall22">
+	<center>
+		<h3>Fall 2022 Semester</h3>
+	</center><br>
+
+	<table class="table table-bordered" style="margin-left: 5%; margin-right: 5%; width: 90%;">
+		<thead>
+				<tr>
+					<th class="course">Course</th>
+					<th>Credits</th>
+					<th class="course-name">Full Name</th>
+					<th>Grade</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td class="course">IT 015</td>
+					<td>3</td>
+					<td class="course-name">Introduction to Information Systems</td>
+					<td>A</td>
+					<td>Basics of how computers play an important role in business</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">WSC 001</td>
+					<td>3</td>
+					<td class="course-name">Composition I</td>
+					<td>A</td>
+					<td>Improved my ability to put my ideas onto paper and have it make sense</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">LEGL 020</td>
+					<td>3</td>
+					<td class="course-name">Intro to Legal Systems, Environment and Contracts</td>
+					<td>A</td>
+					<td>Basics about the legal system and business law</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">MATH 040</td>
+					<td>3</td>
+					<td class="course-name">Linear Math & Matrices</td>
+					<td>A</td>
+					<td>Further enhanced problem solving skills through matrices, graphing, and algebra</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">IT 001</td>
+					<td>1</td>
+					<td class="course-name">Introduction to Excel</td>
+					<td>A-</td>
+					<td>Learned excel functions and how to make spreadsheets with tables and visual representaions of data</td>  
+				</tr>			
+		</tbody>
+	</table>
+</div>
+
+<hr>
+<br><br><br><br>
+
+<div id="spring23">
+	<center>
+		<h3>Spring 2023 Semester</h3>
+	</center><br>
+	
+	<table class="table table-bordered" style="margin-left: 5%; margin-right: 5%; width: 90%;">
+			<thead>
+				<tr>
+					<th class="course">Course</th>
+					<th>Credits</th>
+					<th class="course-name">Full Name</th>
+					<th>Grade</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td class="course">ACCT 101</td>
+					<td>3</td>
+					<td class="course-name">Financial Accounting</td>
+					<td>A</td>
+					<td>Applied knowledge in excel to learn the basics of financial statements and measurement of the results of business activities</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">WSC 002</td>
+					<td>3</td>
+					<td class="course-name">Composition II</td>
+					<td>A</td>
+					<td>Further improved my critical thinking through writing analytical essays about themes in novels and articles. Also passed the Writing Proficiency Exam</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">BAN 001</td>
+					<td>3</td>
+					<td class="course-name">Introduction to Business Statistics</td>
+					<td>A</td>
+					<td>Enhanced excel skills to make conclusions on data and statistics</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">RHET 007</td>
+					<td>3</td>
+					<td class="course-name">Public Speaking</td>
+					<td>A</td>
+					<td>Enhanced my ability to prepare and perform informative and persuasive speeches in front of an audience while improving my ability to avoid common distracting mannerisms</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">BBA 100</td>
+					<td>3</td>
+					<td class="course-name">Business and Society</td>
+					<td>A</td>
+					<td>Learned the imprtance of networking and started to build a resume and linkedin form scratch</td>  
+				</tr>			
+		</tbody>
+	</table>
+</div>
+
+<hr>
+<br><br><br><br>
+
+<div id="fall23">
+	<center>
+		<h3>Fall 2023 Semester</h3>
+	</center><br>
+	
+	<table class="table table-bordered" style="margin-left: 5%; margin-right: 5%; width: 90%;">
+			<thead>
+				<tr>
+					<th class="course">Course</th>
+					<th>Credits</th>
+					<th class="course-name">Full Name</th>
+					<th>Grade</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td class="course">FIN 101</td>
+					<td>3</td>
+					<td class="course-name">Intro to Finance, Financial Markets, Institutions</td>
+					<td>A</td>
+					<td>Applied knowledgeof statistics to make basic calculations such as present and future values</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">MGT 101</td>
+					<td>3</td>
+					<td class="course-name">Introduction to Management</td>
+					<td>A</td>
+					<td>Learned the importance of good management in a workplace and how that is key for businesses to have success</td>
+				</tr>
+				
+				<tr>
+					<td class="course">ECO 002</td>
+					<td>3</td>
+					<td class="course-name">Microeconomics</td>
+					<td>A</td>
+					<td>Learned about the relationship between supply and demand, opportunity cost, and producer and consumer surplus</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">MKT 101</td>
+					<td>3</td>
+					<td class="course-name">Principles of Marketing</td>
+					<td>A</td>
+					<td>Learned basic marketing strategies and how marketing is essential for a business to have success captivating their target audience</td>  
+				</tr>		
+		</tbody>
+	</table>
+</div>
+<hr>
+<br><br><br><br>
+<div id="spring24">
+	<center>
+		<h3>Spring 2024 Semester (In Progress)</h3>
+	</center><br>
+	
+	<table class="table table-bordered" style="margin-left: 5%; margin-right: 5%; width: 90%;">
+			<thead>
+				<tr>
+					<th class="course">Course</th>
+					<th>Credits</th>
+					<th class="course-name">Full Name</th>
+					<th>Grade</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td class="course">IT 030</td>
+					<td>3</td>
+					<td class="course-name">Web-based Application Development</td>
+					<td>N/A</td>
+					<td>Will furher inhance web development skills in HTML, CSS, and Javascript</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">BAN 157E</td>
+					<td>3</td>
+					<td class="course-name">Introduction to Data Visualization</td>
+					<td>N/A</td>
+					<td>Will learn to use Tableau</td>
+				</tr>
+				
+				<tr>
+					<td class="course">IT 170</td>
+					<td>3</td>
+					<td class="course-name">Intro to Data Mining</td>
+					<td>N/A</td>
+					<td>Will Learn to use RapidMiner</td>  
+				</tr>
+				
+				<tr>
+					<td class="course">BAN 122</td>
+					<td>3</td>
+					<td class="course-name">Intermediate Business Statistics</td>
+					<td>N/A</td>
+					<td>Continuation and review of BAN 001</td>  
+				</tr>		
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
