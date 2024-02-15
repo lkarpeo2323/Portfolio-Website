@@ -31,12 +31,12 @@
         width: 100%;
       }
     }
-	
-	.b1{ 
-	background-color: #EEC900;
-	border: 1px solid black;
-	}
-	
+
+  .b1{ 
+  background-color: #EEC900;
+  border: 1px solid black;
+  }
+
     .b1, .b2{
       margin-bottom: 20px;
       padding: 10px;
@@ -44,6 +44,13 @@
 
     .pdf-container {
       margin-bottom: 20px;
+      width: 100%; /* Ensure the container spans the entire width */
+      height: 800px; /* Set a fixed height or adjust as needed */
+    }
+
+    .pdf-content {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -62,19 +69,24 @@
   </nav>
 
   <div class="container">
+  
     <div class="row">
-      <div class="col-lg-4 col-md-6 b1">
+	<div class="col-lg-3 col-xs-0 col-sm-0 col-md-0"></div>
+      <div class="col-lg-6 col-xs-12 col-sm-12 col-md-12" id="abt" style="padding: 15px; margin-bottom: 20px; background-color: #EEC900;">
         <legend><h3><center>About Leo:</center></h3></legend>
-        <p>Leo Karpel is a highly motivated and tech-savvy student currently pursuing a Bachelor of Business 
+        Leo Karpel is a highly motivated and tech-savvy student currently pursuing a Bachelor of Business 
         Administration in Information Technology at Hofstra University's Frank G. Zarb School of Business. Boasting a 
         cumulative GPA of 3.99 and earning spots on the Dean's and Provost's Lists, he is committed to bridging academic 
-        knowledge with practical experiences in the realms of business and technology.</p>
+        knowledge with practical experiences in the realms of business and technology.
+      <div class="col-lg-3 col-xs-0 col-sm-0 col-md-0"></div>
+	  </div>
+	 
+
+      <div class="pdf-container">
+          <embed class="pdf-content" src="public/documents/Leo Karpel Resume.pdf" type="application/pdf">
+          <!-- Change "your_pdf_document.pdf" to the path of your PDF file -->
       </div>
-      <div class="col-lg-8 col-md-6 b2">
-        <div class="pdf-container">
-          <iframe src="public/documents/Leo Karpel Resume.pdf" style="width: 100%; height: 600px; border: none;"></iframe>
-        </div>
-      </div>
+
     </div>
   </div>
 </body>
