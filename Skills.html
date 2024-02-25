@@ -23,26 +23,24 @@
 #transcript{
 margin-bottom: 50px;
 }
-.skill{
+.company{
 border: 1px solid black;
 border-radius: 20%;
 height: 100px;
 width: 100px;
 }
-.skill:hover{
+.company:hover{
 cursor: pointer;
 opacity: .5;
 }
-  </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-14K5MTJ3FF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+.sim:hover{
+cursor: pointer;
+opacity: .5;
+}
 
-  gtag('config', 'G-14K5MTJ3FF');
-</script>
+
+
+  </style>
 </head>
 
 <body>
@@ -51,126 +49,71 @@ opacity: .5;
   <nav class="navbar navbar-inverse" id="navigation">
 <div class="container">
 <ul class="nav navbar-nav">
-	<li><a id="topText" class="glyphicon glyphicon-home" href="/"> Home</a></li>
-	<li><a id="topText" class="glyphicon glyphicon-search" href="about"> About </a></li>
-	<li><a id="topText" class="glyphicon glyphicon-education" href="academics"> Academics</a></li>
-	<li><a id="topText" class="glyphicon glyphicon-wrench" href="skills"> Skills</a></li>
-	<li><a id="topText" class="glyphicon glyphicon-user" href="contact"> Contact</a></li>
+  <li><a id="topText" class="glyphicon glyphicon-home" href="Project Bootstrap.html"> Home</a></li>
+  <li><a id="topText" class="glyphicon glyphicon-search" href="About Me.html"> About </a></li>
+  <li><a id="topText" class="glyphicon glyphicon-education" href="Academics.html"> Academics</a></li>
+  <li><a id="topText" class="glyphicon glyphicon-wrench" href="Skills.html"> Skills</a></li>
+  <li><a id="topText" class="glyphicon glyphicon-user" href="Contact.html"> Contact</a></li>
   </ul>
 </div>
  </nav>
  <center>
-  <h1 style="margin-bottom: 20px;" >Click <b>EACH</b> of the icons to see course certificate documents!</h1>
+  <h1 style="margin-bottom: 20px;" >Click <b>EACH</b> icon to view Leo's projects and Job Simulations!</h1>
  </center>
  
- <div class="container skills-container">
-    
-    <div class="row" style="margin-top: 20px;">
-      <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 b1"><img class="skill" id="html" src="public/images/HTML.png"></div>
-      <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 b1"><img class="skill" id="css" src="public/images/css.png"></div>
-      <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 b1"><img class="skill" id="javascript" src="public/images/Javascript.png"></div>
-      <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 b1"><img class="skill" id="jquery" src="public/images/jquery.png"></div>
-      <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 b1"><img class="skill" id="bootstrap" src="public/images/Bootstrap.png"></div>
-      <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 b1"><img class="skill" id="chatgpt" src="public/images/chatGPT.png"></div>
-    </div>
-  </div>
-
-<div class="all-certs" style="margin-bottom: 200px;">
-	<center>
-		<iframe id="bootstrapCert" class="col-lg-9" src="public/documents/bootstrap+Jquery.pdf" style="display: none; margin-top: 40px; height: 500px; width: 100%;">
-		</iframe>
-		<iframe id="javascriptCert" src="public/documents/JavaScript.pdf" style="display: none; margin-top: 40px; height: 500px; width: 100%;">
-		</iframe>
-		<iframe id="htmlCert" src="public/documents/html.pdf" style="display: none; margin-top: 40px; height: 500px; width: 100%;">
-		</iframe>
-	</center>
-
-	<div class="row">
-		<iframe class="col-lg-3 col-md-3 col-sm-12 col-xs-12 b1" style="margin-left: 6.25%; margin-top: 20px; display: none; height: 300px;" id="promptEngineer" src="public/documents/promptEngineer.pdf">
-			</iframe>
-		<iframe class="col-lg-3 col-md-3 col-sm-12 col-xs-12 b1" style="margin-left: 6.25%; margin-top: 20px; display: none; height: 300px;" id="OpenAI" src="public/documents/Open AI.pdf">
-			</iframe>
-		<iframe class="col-lg-3 col-md-3 col-sm-12 col-xs-12 b1" style="margin-left: 6.25%; margin-top: 20px; margin-right: 6.25%; display: none; height: 300px;" id="AIbusiness" src="public/documents/AI applied for business.pdf">
-			</iframe>
-
+ <div class="row" style="margin-right: 5%; margin-left: 5%; margin-top: 25px;">
+ <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 b1">
+ <div class="sim" href="StartUpHome.html"target="_blank">
+	<figure>
+		<img src="public/images/CompanyThumbnail.png" style="height: 300px; width: 400px;">
+	</figure>
+	<figcaption><h3>Mock Online Course Company Website</h3></figcaption>
 	</div>
 </div>
+
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				<h1>Job Simulations<h1>
+			</th>
+		</tr>
+	</thead>
 	
-
-<script>
-
-// bootstrap dropdown
-
-$(document).ready(function(){
-  $("#bootstrap").click(function(){        
-    $("#bootstrapCert").show();
-	$("#promptEngineer").hide();
-	$("#javascriptCert").hide();
-	$("#htmlCert").hide();
-	$("#OpenAI").hide();
-	$("#AIbusiness").hide();
-  });
-  
-
-// jQuery dropdown
-
-
-  $("#jquery").click(function(){        
-    $("#bootstrapCert").show();
-	$("#promptEngineer").hide();
-	$("#javascriptCert").hide();
-	$("#htmlCert").hide();
-	$("#OpenAI").hide();
-	$("#AIbusiness").hide();
-  });
-  
-
-// chatGPT dropdown
-
-
-  $("#chatgpt").click(function(){        
-    $("#promptEngineer").show();
-	$("#OpenAI").show();
-	$("#AIbusiness").show();
-	$("#javascriptCert").hide();
-	$("#bootstrapCert").hide();
-	$("#htmlCert").hide();
-  });
-  
-// javascript dropdown
-  $("#javascript").click(function(){    
-	$("#javascriptCert").show();
-    $("#promptEngineer").hide();
-	$("#bootstrapCert").hide();
-	$("#htmlCert").hide();
-	$("#OpenAI").hide();
-	$("#AIbusiness").hide();
-});
+	<tbody>
+		<tr>
+			<td>
+				<figure>
+					<img src="C:\Users\User\OneDrive\Desktop\Java Basics\Linkedin\New web\images\GoldmanSachs.jpg" style="height: 100px; width: 100px;">
+				</figure>
+				
+				<figcaption> 
+					<center>
+						<h3>Excel Skills for Business</h3>
+					</center>
+				</figcaption>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<figure>
+					<img style="border: 1px solid black;" src="C:\Users\User\OneDrive\Desktop\Java Basics\Linkedin\New web\images\Accenture.png" style="height: 100px; width: 100px;">
+				</figure>
+				
+				<figcaption> 
+					<center>
+						<h3>Excel Skills for Business</h3>
+					</center>
+				</figcaption>
+			</td>
+		</tr>
 	
-	// css dropdown
-  $("#css").click(function(){    
-	$("#javascriptCert").show();
-    $("#promptEngineer").hide();
-	$("#bootstrapCert").hide();
-	$("#htmlCert").hide();
-	$("#OpenAI").hide();
-	$("#AIbusiness").hide();
-	
-  });
-  
-  $("#html").click(function(){    
-	$("#htmlCert").show();
-    $("#promptEngineer").hide();
-	$("#bootstrapCert").hide();
-	$("#javascriptCert").hide();
-	$("#OpenAI").hide();
-	$("#AIbusiness").hide();
-	
-  });
-  
-});
-  
-</script>
+	</div>
+</fieldset>
+			
+
 
 
 </body>
