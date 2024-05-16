@@ -9,23 +9,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="website.js"></script>
 	<title>About Leo</title>
-  <style>
-  #topText {
-      color: white; 
-	 }
-#topText:hover {
-	opacity: .5;
-}
-
-#navigation {
-  background-color: blue;
-}
-#transcript{
-margin-bottom: 50px;
-}
-
-
-  </style>
 </head>
 
 <body onload="LoadMenuInfo();">
@@ -33,28 +16,44 @@ margin-bottom: 50px;
 <span id="navigator"></span>
 
   
+	<br> <br />
+	
+	
   
-<div class="about-container" style="display: flex; justify-content: space-between; align-items: center;">
-	<div class="aboutLeo" style="border: 1px solid black; background-color: #EEC900; padding: 10px; width: 45%;">
-		<legend>
-			<h3>
-				<center>
-					About Leo:
-				</center>
-			</h3>
-		</legend>
-		
-		<p>
-	Leo Karpel is a highly motivated and tech-savvy student currently pursuing a Bachelor of Business 
-	Administration in Business Analytics at Hofstra University's Frank G. Zarb School of Business. Boasting a 
-	cumulative GPA of 3.99 and earning spots on the Dean's and Provost's Lists, he is committed to bridging academic 
-	knowledge with practical experiences in the realms of business and technology.
-		</p>
+<ul class="nav nav-tabs" style="width: 100%;">
+	<li class="nav-item active" ><a style="background-color: green; color: white;" data-toggle="tab" href="#about">About Leo</a></li>
+	<li class="nav-item"><a style="background-color: green; color: white;" data-toggle="tab" href="#resume">Resume</a></li>
+</ul>
+
+<div class="tab-content">
+
+	<!-- About Section -->
+	<div id="about" class="tab-pane fade in active">
+			<div class="about-container" style="display: flex; justify-content: space-between; align-items: center;">
+				<div class="aboutLeo" style="border: 1px solid black; background-color: #EEC900; padding: 10px; width: 90%;">
+					<legend>
+						<h3>
+							<center>
+								About Leo:
+							</center>
+						</h3>
+					</legend>
+					
+					<p>
+				Leo Karpel is a highly motivated and tech-savvy student currently pursuing a Bachelor of Business 
+				Administration in Business Analytics at Hofstra University's Frank G. Zarb School of Business. Boasting a 
+				cumulative GPA of 3.99 and earning spots on the Dean's and Provost's Lists, he is committed to bridging academic 
+				knowledge with practical experiences in the realms of business and technology.
+					</p>
+				</div>
+			</div>
 	</div>
 
-
-	<iframe style="width: 45%; margin-right: 7.5%; height: 600px;"  src="public/documents/Leo Karpel Resume.pdf""></iframe>
-
+	<!-- Resume -->
+	<div id="resume" class="tab-pane fade">
+		<h4>Resume</h4>
+			<iframe style="width: 100%; height: 100vh;  border: none;" src="C:\Users\User\OneDrive\Desktop\IMPORTANT\JOB APPLICATION\Leo Karpel Resume.pdf"></iframe>
+	</div>
 </div>
 
 
