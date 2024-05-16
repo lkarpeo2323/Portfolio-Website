@@ -1,113 +1,89 @@
-body {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(4, 4, 140);
-}
-
 #topText {
-  color: white;
+      color: white; 
+	 }
+#topText:hover {
+	opacity: .5;
 }
 
-#nav {
-  background-color: orange;
-  margin-top: 0px;
+#navigation {
+  background-color: blue;
+}
+#transcript{
+margin-bottom: 50px;
 }
 
-.dropdown-toggle:hover {
-  opacity: 0.5;
+.contact-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
 
-.companyName {
-  text-align: center;
-  font-size: 30px;
-  color: white;
+.contact-card h1 {
+    margin-top: 0;
+    color: #333;
 }
 
-.bigHeader {
-  font-size: 50px;
+.contact-card p {
+    margin-bottom: 5px;
+    color: #666;
 }
 
-.container {
-  background-color: black;
-  margin-bottom: 15px;
-  width: 90%;
+.contact-card .contact-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.caption,
-.courseInfo,
-.list {
-  color: white;
+.contact-card .contact-info a {
+    text-decoration: none;
+    color: #007bff;
 }
 
-.school {
-  color: rgb(255, 0, 0);
+.preview {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
 }
 
-.easier {
-  color: rgb(1, 227, 39);
+.semester, .gpa {
+	border: 3px solid black;
+	padding: 2%;
+	box-sizing: border-box;
 }
 
-
-.codes:hover {
-  opacity: 0.5;
-}
-
-.techCourse {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.tech {
-  color: white;
-}
-
-figcaption {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 20px;
+.semester {
+	width: 20%;
+	margin-right: 20px;
+	background-color: black;
+	color: white;
 }
 
 
 
-#img {
-  width: 60%;
-  height: 280px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  top: 40%;
-  left: 20%;
+.course{
+width: 10%;
+}
+.course-name{
+width: 20%;
+}
+tbody{
+background: rgb(0,255,0);
+}
+thead{
+background: rgb(0,0,255);
+color: white;
+}
+#border{
+border: 1px solid black;
 }
 
-.bottom-container {
-  margin-bottom: 80px;
-  width: 80%;
-  margin-left: 10%;
+.nav-item:hover {
+	opacity: .5;
+	cursor: pointer;
 }
-
-.title {
-  color: white;
-}
-
-
-.list,
-.app {
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.app {
-  padding: 20px;
-  border: 1px solid black;
-  width: 60%;
-  background-color: brown;
-}
-
-
-
 
