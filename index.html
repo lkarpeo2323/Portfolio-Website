@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="website.js"></script>
+
 	<title>Leo's Home Page</title>
   <style>
   #topText {
@@ -24,33 +26,12 @@ margin-bottom: 50px;
 
 
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-14K5MTJ3FF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-14K5MTJ3FF');
-</script>
 </head>
 
-<body>
-
-
-  <nav class="navbar navbar-inverse" id="navigation">
-<div class="container">
-<ul class="nav navbar-nav">
- 	<li><a id="topText" class="glyphicon glyphicon-home" href="/"> Home</a></li>
-        <li><a id="topText" class="glyphicon glyphicon-search" href="about"> About </a></li>
-        <li><a id="topText" class="glyphicon glyphicon-education" href="academics"> Academics</a></li>
-        <li><a id="topText" class="glyphicon glyphicon-wrench" href="skills"> Projects</a></li>
-        <li><a id="topText" class="glyphicon glyphicon-user" href="contact"> Contact</a></li>
-  </ul>
-</div>
- </nav>
+<body onload="LoadMenuInfo();">
+  <span id="navigator"></span>
   
-  <marquee scrollamount="5" behavior="alternate">
+  <marquee scrollamount="20" behavior="alternate">
 	<b>
 		<h1>
 			Welcome to Leo Karpel's Home Page!
