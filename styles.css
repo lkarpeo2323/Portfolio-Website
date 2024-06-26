@@ -87,3 +87,12 @@ border: 1px solid black;
 	cursor: pointer;
 }
 
+@media (max-width: 768px) {
+      .table-responsive {
+        margin: 0 -15px;
+      }
+      .table th, .table td {
+        white-space: nowrap;
+      }
+    }    
+
